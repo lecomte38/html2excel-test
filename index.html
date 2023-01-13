@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Test export HTML2excel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div>
+          <table class="tab-result" id="tbResultat">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>PRENOM</th>
+                <th>NOM</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Marc</td>
+                <td>Antoine</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Stéphanie</td>
+                <td>Moure</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Logan</td>
+                <td>Daniel</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="buttons-export">
+          <button
+            data-id="csv"
+            id="csv"
+            class="export2excel"
+            onclick="export2excel(this)"
+          >
+            <span class="glyphicon glyphicon-download"></span>Télécharger le
+            tableau en CSV
+          </button>
+          <br />
+          <button
+            data-id="xls"
+            id="xls"
+            class="export2excel"
+            onclick="export2excel(this)"
+          >
+            <span class="glyphicon glyphicon-download"></span>Télécharger le
+            tableau en XLS
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- JS -->
+    <script src="tabHTML_export_excel.js" type="text/javascript"></script>
+  </body>
+</html>
